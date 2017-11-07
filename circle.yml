@@ -1,0 +1,18 @@
+machine:
+  python:
+    version: 2.7.12
+
+  # environment:
+
+dependencies:
+  # pre:
+  override:
+    - npm cache clean
+    - npm install
+
+database:
+  # post:
+
+test:
+  override:
+    - npm run karma
